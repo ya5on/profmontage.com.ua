@@ -1,0 +1,179 @@
+// HEADER-----------------------------
+.header
+    padding-top: 19px
+    background: url(/app/img/header/main-bg.jpg) no-repeat center center
+    background-size: cover
+    position: relative
+    z-index: 1
+    +md(background-position, left)
+
+    
+    &__top
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 37px
+        position: relative
+        z-index: 10
+        +xs(margin-bottom, 0)
+        +md(flex-direction, column)
+        
+    &__left
+        +size(6)
+        +size-md(12)
+        display: flex
+
+        p
+            font-size: 16px
+            line-height: 24px
+            margin-left: 19px
+            color: #fff
+            +lg(font-size, 14px)
+            +lg(margin-left, 15px)
+            +sm(display, none)
+
+    .logo
+        height: 44px
+        +xs(height, 35px)
+
+    &__center
+        position: absolute
+        right: 50%
+        transform: translateX(50%)
+        +md(right, 5%)
+        +md(transform, translateX(0))
+        +xs(right, 1%)
+
+        ul
+            display: flex
+            +xs(flex-direction, column)
+
+        .lang
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            border: 1px solid #fff
+            width: 40px
+            height: 40px
+            color: #fff
+            font-size: 16px
+            transition: all .4s
+
+            &:first-child
+                margin-right: 7px
+            a
+                color: #fff
+                font-size: 14px
+
+            &__active
+                border: 1px solid $main-color
+                background: $main-color
+                color: #000
+
+            &:hover
+                border-color: $main-color
+                color: $main-color
+
+    &__right
+        +size(6)
+        +size-md(12)
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        +xs(flex-direction, column)
+        +xs(margin, 10px 0)
+
+
+        .phone
+            margin-right: 30px
+            display: block
+
+            a
+                color: #ffff0a
+                font-size: 18px
+                font-weight: 900
+                line-height: 22px
+                display: block
+                transition: all .4s
+
+                &:hover
+                    color: #2B2D42
+
+        .button
+            color: #fff
+            border: 1px solid #005688
+            background: #1F4A65
+            box-sizing: border-box
+            max-width: 270px
+            height: 55px
+            line-height: 50px
+            font-size: 16px
+            font-weight: 700
+            text-transform: inherit
+            +xs(font-size, 14px)
+
+
+
+    &__content
+        position: relative
+        z-index: 1
+        +xs(margin-top, 15px)
+        
+    &__text
+        width: 100%
+
+    &__title
+        line-height: 56px
+        +sm(line-height, 30px)
+
+        br
+            +xs(display, none)
+
+    &__subtitle
+        margin-top: 29px
+        margin-bottom: 35px
+        color: #ffff0a
+        +xs(margin-top, 10px)
+        +xs(margin-bottom, 15px)
+
+    &__list
+
+        li
+            display: flex
+            align-items: center
+            margin-bottom: 17px
+            +xs(margin-bottom, 5px)
+        p
+            font-size: 20px
+            padding-left: 16px
+            color: #fff
+            font-weight: 700
+            +xs(font-size, 16px)
+
+    &__buttons
+        +size(6)
+        +size-sm(12)
+        +xs(width, 100%)
+        margin-top: 45px
+        .button
+            font-weight: 900
+            font-size: 16px
+            +xs(font-size, 12px)
+
+            &--1
+                background: linear-gradient(90deg, rgba(255,174,0,1) 0%, rgba(255,238,0,1) 100%)
+                border: none
+                color: #242424
+                margin-bottom: 5px
+
+            &--2
+                background: #2B2D42
+                border: 1px solid #8D99AE
+                color: #fff
+                margin-bottom: 85px
+                line-height: 24px
+                +xs(margin-bottom, 25px)
+
+// END HEADER-----------------------------

@@ -1,0 +1,125 @@
+.form-container
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 1043
+    height: 100%
+    width: 100%
+    background-color: rgba(0, 0, 0, .7)
+    transition: all 0.7s
+    display: flex
+    justify-content: center
+    align-items: center
+
+.form-block
+    margin: auto
+    width: 100%
+    max-width: 270px
+    padding: 40px 50px
+    position: relative
+    color: #000
+    background: url("/app/img/modal-bg.jpg") no-repeat
+    background-size: cover
+    +sm(max-width, 210px)
+    +sm(padding, 20px 25px)
+
+    h3
+        color: #fff
+        font-weight: 900
+
+    p
+        color: #fff
+        font-size: 18px
+        line-height: 24px
+        font-weight: 500
+        margin-bottom: 40px
+        +sm(font-size, 15px)
+        +sm(line-height, 15px)
+        +sm(margin-bottom, 20px)
+
+    form
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        max-width: 270px
+        width: 100%
+
+        input
+            height: 55px
+            display: inline-block
+            width: 100%
+            box-sizing: border-box
+            font-size: 16px
+            border: 1px solid #fff
+            border-radius: 3px
+            outline: none
+            cursor: pointer
+            color: #000
+            margin-bottom: 10px
+            text-indent: 25px
+            +lg(font-size, 14px)
+            +lg(height, 45px)
+            +md(height, 35px)
+            +md(margin, 5px)
+            +md(font-size, 12px)
+
+            &::placeholder
+                font-size: 16px
+                color: #000
+
+        textarea
+            height: 100px
+            display: inline-block
+            width: 100%
+            box-sizing: border-box
+            font-size: 16px
+            border: 1px solid #fff
+            border-radius: 3px
+            outline: none
+            cursor: pointer
+            color: #000
+            margin-bottom: 10px
+            text-indent: 25px
+            +lg(font-size, 14px)
+            +lg(height, 45px)
+            +md(height, 35px)
+            +md(margin, 5px)
+            +md(font-size, 12px)
+
+            &::placeholder
+                font-size: 16px
+                color: #000
+                padding-top: 15px
+
+
+        .button
+            width: 100%
+            font-size: 14px
+            color: #fff
+            font-weight: 700
+            height: 55px
+            line-height: 50px
+            border: 1px solid #fff
+            border-radius: 3px
+            +md(font-size, 14px)
+            +md(height, 40px)
+            +md(line-height, 36px)
+
+.btn-close
+    width: 40px
+    height: 40px
+    position: absolute
+    top: 5px
+    right: 5px
+    color: #fff
+    font-weight: 500
+    background: transparent
+    font-size: 30px
+    border: none
+    outline: none
+    cursor: pointer
+
+    &:hover
+        color: #000
+

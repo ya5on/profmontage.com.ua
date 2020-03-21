@@ -1,0 +1,147 @@
+.footer
+  margin-top: -70px
+  padding-bottom: 75px
+  +md(padding-bottom, 15px)
+  +xs(padding-top, 50px)
+
+  &__title
+    color: #fff
+    text-align: left
+    line-height: 1
+    margin-bottom: 45px
+    +sm(margin-bottom, 15px)
+
+  &__contacts
+    +row-flex
+    height: auto
+    margin-bottom: 80px
+    +md(height, auto)
+
+  &__map
+    +col
+    +size(7)
+    +size-md(12)
+    //overflow: hidden
+    //padding-bottom: 39%
+    //position: relative
+    //height: 0
+
+    //iframe
+    //  left: 0
+    //  top: 0
+    //  height: 100%
+    //  width: 100%
+    //  position: absolute
+
+    img
+      +md(margin, 0 auto)
+
+  &__text
+    +col
+    +size(5)
+    +size-md(12)
+    display: flex
+    flex-direction: column
+    align-content: center
+    background-color: #000
+    color: #fff
+    line-height: 24px
+    padding-top: 65px
+    padding-left: 100px
+    +md(flex-direction, column)
+    +md(align-items, center)
+    +md(margin, 20px auto)
+    +md(padding-right, 0)
+    +md(text-align, center)
+    +md(padding-left, 0)
+    +md(padding-bottom, 35px)
+
+    span
+      font-weight: 900
+    p
+      margin-bottom: 35px
+      +md(margin-bottom, 15px)
+
+    a
+      color: #fff
+      display: block
+
+    .button
+      font-size: 20px
+      font-weight: 700
+      max-width: 270px
+      height: 70px
+      line-height: 60px
+      box-sizing: border-box
+      border: 1px solid #005688
+      background: #1F4A65
+      color: #fff
+      text-transform: inherit
+      padding-bottom: 50px
+
+  &__tel
+    font-size: 18px
+    margin-bottom: 10px
+    +md(margin-bottom, 15px)
+
+  &__mail
+    margin-top: 30px
+    margin-bottom: 30px
+    font-weight: 900
+
+  &__content
+    +row-flex
+    justify-content: space-between
+    +md(flex-direction, column)
+    +md(justify-content, center)
+    +md(align-items, center)
+    +sm(margin-top, 75px)
+
+
+    p
+      color: #fff
+
+  &__item
+    +col
+    +size(4)
+    +size-sm(12)
+
+    &--1
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      +md(justify-content, center)
+      +md(margin-bottom, 15px)
+
+
+    &--2
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      +md(margin-bottom, 15px)
+
+      p
+        margin-bottom: 5px
+        color: #8D8C8C
+        font-size: 14px
+        +md(text-align, center)
+
+      button
+        text-decoration: underline
+        font-size: 14px
+        color: #3791D0
+
+    &--3
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      +md(justify-content, center)
+      +md(margin-bottom, 15px)
+
+      p
+        margin-right: 10px
+        text-align: right
+        color: #8D8C8C
+        line-height: 22px
+        font-size: 14px

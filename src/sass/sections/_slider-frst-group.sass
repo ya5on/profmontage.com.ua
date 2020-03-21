@@ -1,0 +1,133 @@
+.slider-frst-group
+    position: relative
+
+    h2
+        margin-top: 120px
+        margin-bottom: 87px
+        +md(margin-top, 50px)
+        +md(margin-bottom, 50px)
+
+    .slider
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 100%
+        height: 100%
+        max-height: 565px
+        margin-bottom: 85px
+        +md(max-height, 100%)
+
+        &__garage,
+        &__prom
+            +size(8)
+            +size-md(12)
+            position: relative
+            overflow: hidden
+            +md(width, 100%)
+
+        &__content
+            +size(4)
+            +size-md(12)
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            position: relative
+            +sm(padding-top, 45px)
+
+        &__text
+            display: flex
+            flex-direction: column
+            margin-left: 5px
+
+            h4
+                font-size: 24px
+                line-height: 28px
+                font-weight: 900
+                margin-bottom: 34px
+                margin-top: -9px
+                +lg(margin-bottom, 15px)
+
+            li
+                list-style-type: inherit
+                list-style-position: inside
+                margin-bottom: 27px
+                line-height: 28px
+                +lg(margin-bottom, 10px)
+
+            p
+                font-weight: 900
+                line-height: 28px
+
+            img
+                margin-bottom: 53px
+                +md(display, none)
+
+        &__more
+            display: flex
+            justify-content: space-between
+            align-items: center
+            +md(justify-content, flex-start)
+
+            p
+                +md(margin-left, 35px)
+                +sm(display, none)
+
+        &__btns
+            display: flex
+            margin: 15px 0
+            justify-content: flex-start
+            +sm(position, absolute)
+            +sm(top, 5px)
+            +sm(left, 0)
+            +sm(margin, 0)
+
+        .swiper-button-prev-garage,
+        .swiper-button-next-garage,
+        .swiper-button-prev-prom,
+        .swiper-button-next-prom
+                outline: none
+                width: 35px
+                height: 28px
+                cursor: pointer
+
+        .swiper-button-prev-garage,
+        .swiper-button-prev-prom
+                margin-right: 30px
+
+        .swiper-button-disabled
+                filter: grayscale(100%)
+
+        span
+            position: absolute
+            z-index: 10
+            font-size: 26px
+            color: $main-color
+            font-weight: 900
+            top: 25px
+            left: 70px
+            +sm(font-size, 16px)
+            +sm(left, 25px)
+            +sm(background-color, grey)
+            +sm(padding, 3px)
+
+
+.swiper-slider-garage,
+.swiper-slider-prom
+
+    .swiper-slide
+        img
+            height: 100%
+            max-height: 565px
+            +sm(height, auto)
+            +md(margin, 0 auto)
+
+
+.shape-2
+    position: absolute
+    top: 45%
+    left: 0
+    z-index: -1
+    +lg(display, none)
+
+
+

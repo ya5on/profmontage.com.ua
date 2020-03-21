@@ -1,0 +1,152 @@
+.services
+  position: relative
+
+  h2
+    margin-top: 10px
+    margin-bottom: 82px
+    +sm(margin-bottom, 35px)
+
+  &__items
+    display: flex
+    justify-content: space-between
+    margin-bottom: 130px
+    +md(flex-wrap, wrap)
+    +sm(margin-bottom, 25px)
+
+
+  &__item
+    +size(6)
+    +size-md(12)
+    +md(margin, 0 auto 15px)
+    +md(width, 100%)
+
+    h4
+      font-weight: 900
+      margin-bottom: 33px
+
+    p
+      line-height: 28px
+      margin-bottom: 40px
+
+    img
+      max-width: 570px
+      +md(margin, 0 auto)
+      +md(max-width, 100%)
+      +md(width, 100%)
+
+    .button
+      background: #2B2D42
+      border: 1px solid #8D99AE
+      color: #fff
+    br
+      +sm(display, none)
+
+  &__right
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      width: 670px
+      height: 4px
+      background: #000
+      bottom: 82px
+      right: 0
+      z-index: 1
+      +lg(display, none)
+
+  &__left
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      width: 670px
+      height: 4px
+      background: #000
+      bottom: 82px
+      left: 0
+      z-index: 1
+      +lg(display, none)
+
+  &__black
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      z-index: -1
+      width: 570px
+      height: 422px
+      top: -15px
+      left: -15px
+      border: 5px solid #000
+      box-sizing: border-box
+      +lg(display, none)
+
+    &:after
+      content: ''
+      position: absolute
+      z-index: -1
+      width: 570px
+      height: 430px
+      top: 10px
+      left: 15px
+      border: 5px solid $main-color
+      box-sizing: border-box
+      +lg(display, none)
+
+  &__yellow
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      z-index: -1
+      width: 570px
+      height: 430px
+      bottom: -15px
+      left: -15px
+      border: 5px solid $main-color
+      box-sizing: border-box
+      +lg(display, none)
+
+
+    &:after
+      content: ''
+      position: absolute
+      z-index: -1
+      width: 570px
+      height: 430px
+      top: -15px
+      right: -15px
+      border: 5px solid #000
+      box-sizing: border-box
+      +lg(display, none)
+
+.shape-4
+  position: absolute
+  left: 0
+  top: 35%
+  z-index: -2
+  +lg(display, none)
+
+.ml-100
+  margin-left: 130px
+  +sm(margin-left, 0)
+
+.mt-10
+  margin-top: -10px
+  +sm(margin-top, 0)
+
+.mt-50
+  margin-top: 54px
+  +sm(margin-top, 0)
+
+.mt-70
+  margin-top: 74px
+  +sm(margin-top, 0)
+
+.mt-130
+  margin-top: 130px
+  +sm(margin-top, 0)

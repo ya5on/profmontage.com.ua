@@ -1,0 +1,229 @@
+@import '../vendor/smart-grid/smart-grid.sass'
+@import 'fonts'
+@import 'variables'
+@import '../../node_modules/swiper/css/swiper.min.css'
+//@import 'components/aos'
+@import 'components/modal'
+@import 'sections/header'
+@import 'sections/about'
+@import 'sections/slider-frst-group'
+@import 'sections/slider-scnd-group'
+@import 'sections/slider-automatic'
+@import 'sections/slider-frth-group'
+@import 'sections/slider-accessories'
+@import 'sections/form'
+@import 'sections/slider-main'
+@import 'sections/services'
+@import 'sections/reviews'
+@import 'sections/footer'
+@import 'sections/thanks'
+@import 'sections/politics'
+
+//General
++reset
+
+body
+  font: 18px Rubik, sans-serif
+  font-weight: 500
+  min-width: 320px
+  max-width: 1920px
+  margin: 0 auto
+  width: 100%
+  background: #fff
+  color: #000
+  line-height: 1
+
+.lock
+  +sm(overflow, hidden)
+
+a
+  text-decoration: none
+
+h1
+  font-size: 36px
+  font-weight: 900
+  line-height: 55px
+  color: #fff
+  +xs(font-size, 29px)
+  +xs(line-height, 35px)
+
+h2 
+  font-size: 36px
+  line-height: 46px
+  text-align: center
+  font-weight: 900
+  +md(font-size, 30px)
+  +sm(font-size, 22px)
+  +sm(line-height, 1)
+
+h3 
+  font-size: 28px
+  +xs(font-size, 18px)
+
+h4
+  font-size: 26px
+
+h5
+  font-size: 26px
+  +lg(font-size, 22px)
+  +md(font-size, 18px)
+  +sm(margin-top, 10px)
+
+img
+  display: block
+
+.container
+  +wrapper
+
+.btn
+    text-align: center
+    display: inline-block
+    width: 100%
+    outline: none
+    cursor: pointer
+    background: transparent
+    transition: all .5s
+
+.strong
+  font-weight: 900
+
+.flex-end
+  justify-content: flex-end
+.flex-center
+  justify-content: center
+.reverse
+  +sm(flex-direction, column-reverse)
+
+.hidden
+  display: none
+
+.lock
+  overflow: hidden
+
+//btn to top------------------
+#scroll
+  position: fixed
+  right: 40px
+  bottom: 40px
+  cursor: pointer
+  width: 50px
+  height: 50px
+  text-indent: -9999px
+  display: none
+  border-radius: 60px
+  z-index: 99999
+  +md(display, none!important)
+
+
+#scroll img
+  position: absolute
+  opacity: .7
+  transition: all .4s
+
+#scroll img:hover
+  opacity: 1
+//----------------------------
+.plsh
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 2
+  +sm(display, none)
+
+//buttons, hover
+button
+  appearance: none
+  background-color: transparent
+  border: 0
+  border-radius: 3px
+  padding: 0
+  cursor: pointer
+  transition: 200ms
+
+.button
+  display: inline-block
+  outline: 0
+  position: relative
+  text-align: center
+  width: 100%
+  background: linear-gradient(90deg, rgba(255,174,0,1) 0%, rgba(255,238,0,1) 100%)
+  transition: 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
+  height: 68px
+  max-width: 370px
+  font-size: 16px
+  font-weight: 900
+  text-transform: uppercase
+  box-sizing: border-box
+  letter-spacing: -0.6px
+  +xs(font-size, 14px)
+  +xs(line-height, 46px)
+  +xs(height, 50px)
+
+//  .text
+//    position: relative
+//    z-index: 2
+//    +sm(position, static)
+//
+//.button:before,
+//.button:after
+//  content: ''
+//  display: block
+//  position: absolute
+//  height: 50%
+//  width: 0
+//  transition: 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)
+//  z-index: 1
+//
+//.button:before
+//  top: 0
+//  left: 0
+//  right: auto
+//
+//.button:after
+//  bottom: 0
+//  right: 0
+//  left: auto
+//
+//.button:hover:before
+//  width: 100%
+//  right: 0
+//  left: auto
+//
+//.button:hover:after
+//  width: 100%
+//  left: 0
+//  right: auto
+//
+//.button.cta_a
+//  border-color: $main-color
+//
+//.button.cta_a:before,
+//.button.cta_a:after
+//  background: #e4b172
+//
+//.button.cta_a:hover
+//  color: #fff
+//  border-color: #e4b172
+//
+//.button.cta_b
+//  border-color: #fff
+//
+//.button.cta_b:before,
+//.button.cta_b:after
+//  background: #fff
+//
+//.button.cta_b:hover
+//  color: #e4b172
+//  border-color: #e4b172
+//
+//.button.cta_c
+//  border-color: $main-color
+//
+//.button.cta_c:before,
+//.button.cta_c:after
+//  background: #fff
+//
+//.button.cta_c:hover
+//  color: #e4b172
+
+

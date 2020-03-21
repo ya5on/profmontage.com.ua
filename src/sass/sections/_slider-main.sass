@@ -1,0 +1,116 @@
+.slider-main
+  padding-top: 183px
+  padding-bottom: 109px
+  position: relative
+  background: url("/app/img/sliders/main/slider-main-bg.jpg") no-repeat center
+  background-size: cover
+  +sm(padding-top, 90px)
+  +sm(padding-bottom, 65px)
+
+  h2
+    margin-top: 105px
+    margin-bottom: 63px
+    +md(margin-top, 50px)
+    +md(margin-bottom, 50px)
+
+  .slider
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    height: 100%
+    max-height: 565px
+    margin-bottom: 120px
+    +md(max-height, 100%)
+    +sm(margin-bottom, 50px)
+
+    &__main
+      +size(9)
+      +size-md(12)
+      position: relative
+      overflow: hidden
+      +md(width, 100%)
+
+    &__content
+      +size(3)
+      +size-md(12)
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      position: relative
+      +sm(padding-top, 5px)
+
+    &__text
+      display: flex
+      flex-direction: column
+
+      img
+        margin-bottom: 25px
+        +md(display, none)
+
+    &__more
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      +md(justify-content, flex-start)
+
+    &__btns
+      display: flex
+      margin: 15px 0 40px
+      +sm(position, absolute)
+      +sm(top, 5px)
+      +sm(left, 0)
+      +sm(margin, 0)
+
+    .swiper-button-prev-main,
+    .swiper-button-next-main
+      outline: none
+      width: 35px
+      height: 28px
+      cursor: pointer
+
+    .swiper-button-prev-main
+      margin-right: 30px
+
+    .swiper-button-disabled
+      filter: grayscale(100%)
+
+    &__pagination
+      width: 100%
+      +sm(display, none)
+
+
+
+  .swiper-pagination-main
+    width: 100%
+
+  .swiper-pagination-bullet
+    width: 13px
+    height: 13px
+    background: #fff
+    border-radius: 3px
+    opacity: 1
+
+  .swiper-pagination-bullet-active-main
+    background: #000
+
+  .swiper-pagination-bullets-dynamic
+    display: flex
+    justify-content: space-between
+    width: 100%!important
+    +md(width, 50%!important)
+    +md(margin, 0 auto)
+
+.swiper-slider-main
+
+  .swiper-slide
+    img
+      height: 100%
+      max-height: 525px
+      +sm(height, auto)
+      +md(margin, 0 auto)
+
+
+
+
