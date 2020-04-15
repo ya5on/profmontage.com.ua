@@ -18,11 +18,12 @@
       margin-top: 63px
 
     &__btns
-      display: flex
+      display: none
       margin: 15px 0
       position: absolute
       bottom: 0
       right: 0
+      +lg(display, flex)
       +xs(bottom, 55px)
       +xs(right, 50%)
       +xs(transform, translateX(50%))

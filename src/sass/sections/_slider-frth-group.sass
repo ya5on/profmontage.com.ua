@@ -32,6 +32,10 @@
     &__btns
       display: flex
       margin: 15px 0
+      +xs(position, absolute)
+      +xs(top, -50px)
+      +xs(left, 50%)
+      +xs(transform, translateX(-50%))
 
     .swiper-button-prev-simple,
     .swiper-button-next-simple,
@@ -61,6 +65,8 @@
       +sm(left, 25px)
       +sm(background-color, grey)
       +sm(padding, 3px)
+      +xs(left, 0)
+      +xs(top, 0)
 
   .swiper-slider-simple,
   .swiper-slider-speed
@@ -78,6 +84,7 @@
     margin-bottom: 20px
     margin-left: 90px
     +xs(margin-left, 0)
+    +xs(margin-top, 50px)
 
 .shape-3
   position: absolute

@@ -20,11 +20,12 @@
       margin-top: 60px
 
     &__btns
-      display: flex
       margin: 15px 0
       position: absolute
       bottom: 0
       right: 0
+      display: none
+      +lg(display, flex)
       +xs(bottom, 55px)
       +xs(right, 50%)
       +xs(transform, translateX(50%))
@@ -54,6 +55,8 @@
       +sm(left, 25px)
       +sm(background-color, grey)
       +sm(padding, 3px)
+      +xs(left, 0)
+      +xs(top, 0)
 
   .swiper-slider-automatic
 
@@ -67,6 +70,7 @@
       img
         height: 100%
         max-height: 460px
+        margin: 0 auto
         +sm(height, auto)
         +sm(margin, auto)
 

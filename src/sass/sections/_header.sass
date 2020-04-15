@@ -6,18 +6,26 @@
     position: relative
     z-index: 1
     +md(background-position, left)
+    +sm(background, url(/app/img/header/mob_vorota.jpg) no-repeat right)
+    +sm(background-size, cover)
+    +xs(padding-top, 5px)
+    +xs(height, 100vh)
+
+    .ctx
+        +xs(display, flex)
+        +xs(flex-direction, column)
+        +xs(height, 100vh)
+
 
     
     &__top
         display: flex
-        flex-wrap: wrap
         justify-content: space-between
         align-items: center
         margin-bottom: 37px
         position: relative
         z-index: 10
         +xs(margin-bottom, 0)
-        +md(flex-direction, column)
         
     &__left
         +size(6)
@@ -31,11 +39,15 @@
             color: #fff
             +lg(font-size, 14px)
             +lg(margin-left, 15px)
-            +sm(display, none)
+            +xs(position, absolute)
+            +xs(top, 35px)
+            +xs(left, 0)
+            +xs(line-height, 20px)
+            +xs(margin-left, 0)
 
     .logo
         height: 44px
-        +xs(height, 35px)
+        +xs(height, 24px)
 
     &__center
         position: absolute
@@ -43,11 +55,11 @@
         transform: translateX(50%)
         +md(right, 5%)
         +md(transform, translateX(0))
-        +xs(right, 1%)
+        +xs(right, 0)
+        +xs(top, 40px)
 
         ul
             display: flex
-            +xs(flex-direction, column)
 
         .lang
             display: flex
@@ -60,12 +72,16 @@
             color: #fff
             font-size: 16px
             transition: all .4s
+            +xs(width, 25px)
+            +xs(height, 25px)
+            +xs(font-size, 10px)
 
             &:first-child
                 margin-right: 7px
             a
                 color: #fff
                 font-size: 14px
+
 
             &__active
                 border: 1px solid $main-color
@@ -82,13 +98,12 @@
         display: flex
         justify-content: flex-end
         align-items: center
-        +xs(flex-direction, column)
-        +xs(margin, 10px 0)
 
 
         .phone
             margin-right: 30px
             display: block
+            +xs(margin-right, 0)
 
             a
                 color: #ffff0a
@@ -97,6 +112,8 @@
                 line-height: 22px
                 display: block
                 transition: all .4s
+                +xs(font-size, 14px)
+                +xs(line-height, 16px)
 
                 &:hover
                     color: #2B2D42
@@ -113,6 +130,7 @@
             font-weight: 700
             text-transform: inherit
             +xs(font-size, 14px)
+            +sm(display, none)
 
 
 
@@ -123,10 +141,11 @@
         
     &__text
         width: 100%
+        margin-top: 55px
 
     &__title
         line-height: 56px
-        +sm(line-height, 30px)
+        +sm(line-height, 25px)
 
         br
             +xs(display, none)
@@ -135,28 +154,40 @@
         margin-top: 29px
         margin-bottom: 35px
         color: #ffff0a
-        +xs(margin-top, 10px)
-        +xs(margin-bottom, 15px)
+        +xs(margin-top, 18px)
+        +xs(margin-bottom, 35px)
+        +xs(padding-right, 70px)
 
     &__list
+        padding-right: 30px
 
         li
-            display: flex
-            align-items: center
             margin-bottom: 17px
-            +xs(margin-bottom, 5px)
+            +xs(margin-bottom, 20px)
+
+
+            img
+                height: 17px
+                margin-right: 10px
+                display: inline-block
+                +xs(height, 15px)
+
+
         p
             font-size: 20px
-            padding-left: 16px
             color: #fff
             font-weight: 700
             +xs(font-size, 16px)
+            +xs(padding-left, 0)
+            +xs(line-height, 20px)
 
     &__buttons
         +size(6)
         +size-sm(12)
         +xs(width, 100%)
         margin-top: 45px
+        +xs(margin-top, auto)
+
         .button
             font-weight: 900
             font-size: 16px
@@ -174,6 +205,6 @@
                 color: #fff
                 margin-bottom: 85px
                 line-height: 24px
-                +xs(margin-bottom, 25px)
+                +xs(margin-bottom, 35px)
 
 // END HEADER-----------------------------

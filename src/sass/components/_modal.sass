@@ -10,6 +10,7 @@
     display: flex
     justify-content: center
     align-items: center
+    cursor: url("/app/img/cursor-close.png") 15 15, pointer
 
 .form-block
     margin: auto
@@ -20,12 +21,14 @@
     color: #000
     background: url("/app/img/modal-bg.jpg") no-repeat
     background-size: cover
-    +sm(max-width, 210px)
+    cursor: initial
+    +sm(max-width, 250px)
     +sm(padding, 20px 25px)
 
     h3
         color: #fff
         font-weight: 900
+        +sm(margin-bottom, 15px)
 
     p
         color: #fff
@@ -33,8 +36,8 @@
         line-height: 24px
         font-weight: 500
         margin-bottom: 40px
-        +sm(font-size, 15px)
-        +sm(line-height, 15px)
+        +sm(font-size, 16px)
+        +sm(line-height, 20px)
         +sm(margin-bottom, 20px)
 
     form
@@ -44,6 +47,7 @@
         align-items: center
         max-width: 270px
         width: 100%
+        +sm(margin, 20px 0)
 
         input
             height: 55px
@@ -60,12 +64,11 @@
             text-indent: 25px
             +lg(font-size, 14px)
             +lg(height, 45px)
-            +md(height, 35px)
-            +md(margin, 5px)
             +md(font-size, 12px)
+            +sm(margin-bottom, 15px)
 
             &::placeholder
-                font-size: 16px
+                font-size: 14px
                 color: #000
 
         textarea
@@ -79,12 +82,9 @@
             outline: none
             cursor: pointer
             color: #000
-            margin-bottom: 10px
+            margin-bottom: 15px
             text-indent: 25px
             +lg(font-size, 14px)
-            +lg(height, 45px)
-            +md(height, 35px)
-            +md(margin, 5px)
             +md(font-size, 12px)
 
             &::placeholder
@@ -103,7 +103,7 @@
             border: 1px solid #fff
             border-radius: 3px
             +md(font-size, 14px)
-            +md(height, 40px)
+            +md(height, 45px)
             +md(line-height, 36px)
 
 .btn-close

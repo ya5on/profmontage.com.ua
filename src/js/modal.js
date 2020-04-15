@@ -8,7 +8,7 @@ $(document).ready(function($){
 			'        <form method="post" action="mail.php">\n' +
 			'            <input type="hidden" name="whatform" value="Форма - Перезвоните мне"/>\n' +
 			'            <input name="name" type="text" placeholder="Ваше имя" size="25" required="">\n' +
-			'            <input name="phone" type="tel" placeholder="Ваш телефон" required="">\n' +
+			'            <input id="phone" name="phone" type="tel" placeholder="Ваш телефон" required="">\n' +
 			'            <button class="button cta_b" type="submit"><span class="text">Перезвоните мне</span></button>\n' +
 			'        </form>\n' +
 			'        <button type="button" class="btn-close">×</button>\n' +
