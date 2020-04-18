@@ -78,11 +78,13 @@
       display: flex
       justify-content: center
       align-self: center
+      +xs(height, 300px)
       img
         height: 100%
-        max-height: 500px
         +sm(height, auto)
         +md(margin, 0 auto)
+        +xs(max-height, 300px)
+        +xs(width, 100%)
 
   .more-20
     margin-top: 38px
